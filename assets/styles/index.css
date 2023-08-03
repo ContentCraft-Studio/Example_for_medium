@@ -1,0 +1,58 @@
+:root {
+    --TextColor: #1e1e1e;
+    --BackgroundColor: #ead5f0;
+}
+
+@font-face {
+    font-family: 'Empty-Page';
+    src: url(../fonts/emptypageDEMO.otf);
+}
+
+* {
+    margin: 0;
+    color: var(--TextColor);
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: 'Empty-Page', Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--BackgroundColor);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+    margin-bottom: 65px;
+}
+
+/* Media Queries Styles */
+
+/* x-sm */
+@media (width <=512px) {
+    h1, h2 {
+        margin: 0 30px;
+    }
+}
+
+/* sm */
+@media (512px < width <=640px) {
+    h1, h2 {
+        margin: 0 30px;
+    }
+}
+
+/* md */
+@media (640px < width <=768px) {
+    h1, h2 {
+        margin: 0 30px;
+    }
+}
